@@ -1,7 +1,7 @@
 import { extend, useFrame } from "@react-three/fiber";
 import { InstancedMesh2 } from "@three.ez/instanced-mesh";
 import { MeshBasicMaterial, PlaneGeometry, ShaderMaterial, Color, Vector3 } from "three";
-import { VertexShader, FragmentShader } from "./Shaders";
+import { VertexShader, FragmentShader } from "./shaders";
 import { useEffect, useRef } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 

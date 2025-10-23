@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber"
 import { Stars } from "./stars/Stars"
 import { Menu } from "./Menu/Menu"
-import { Lando } from "./lando"
+import { Lando } from "./Lando"
 
 
 function App() {
