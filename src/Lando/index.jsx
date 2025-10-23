@@ -20,15 +20,13 @@ export const Lando = () => {
   useFrame(({ pointer, clock }, delta) => {
     if (mesh.current) {
       const uniforms = mesh.current.material.uniforms
-      
-      // Update time for animation
+
       timeRef.current = clock.getElapsedTime()
       uniforms.time.value = timeRef.current
       
-      // Update current pointer
+
       uniforms.pointer.value.set(pointer.x, pointer.y)
-      
-      // Update previous pointer after a slight delay
+
       uniforms.prevPointer.value.lerp(uniforms.pointer.value, 8 * delta)
       
     }
